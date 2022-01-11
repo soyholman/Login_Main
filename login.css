@@ -9,6 +9,7 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+
 :root{
 
     --radius:4px;
@@ -22,9 +23,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#f5f5f5 ;
+    /* background-color:#f5f5f5 ; */
 }
 
+span,a{
+
+    display: block;
+    text-align: center;
+color:  hsl(210,82%, 56%);
+text-decoration: none;
+}
+
+a:hover{
+    letter-spacing: 2px;
+}
+#leave{
+
+    transition: all 0.3s linear;
+}
+#leave:hover{
+ 
+
+    
+    transition: all 0.3s linear;
+
+    transform: translateY(-7px);
+}
 .form-container{
 
     position: relative;
@@ -66,6 +90,8 @@
 .form-container .form-body .field{
     width: 100%;
 }
+
+
 .form-container .form-body .field + .field{
     margin-top: var(--padding);
 }
@@ -164,8 +190,7 @@ transition: all 150ms ease-out;
 
     width: 50%;
 }
-
-.alt-login-methods-container .login-method:hover{
+in-methods-container .login-method:hover{
 
     box-shadow: 0 3px 6px rgba(0,0, 0, 0,0.2);
     background-color: #f5f5f5;
